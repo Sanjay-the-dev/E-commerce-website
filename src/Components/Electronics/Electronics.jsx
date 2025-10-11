@@ -1,12 +1,15 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import StarIcon from '../../assets/newStar.png'
+import { useNavigate } from 'react-router-dom'
+
 
 
 const Electronics = () => {
 
   const [products, setProducts] = useState([]);
   const [filterProducts, setFilterProducts]= useState([]);
+  const nav = useNavigate();
 
   useEffect(()=>{
 
@@ -46,9 +49,9 @@ const Electronics = () => {
           <h2 className='h2'>Electronics</h2>
           <ul className='d-flex flex-wrap '>
           {filterProducts.map((element , index)=>{ return (
-            <li key={index} style={{listStyleType:"none" }}>
+            <li key={index} style={{listStyleType:"none" , cursor:"pointer" } } onClick={()=>{nav(`/product/${element.id}`)}}>
               
-              <div className="card m-3 E_Card" >
+              <div className="card m-3 E_Card "  >
                 <img  src={element.image} alt="" style={{width:"170px", height:"200px"}} className='card-img-top pt-3' />
                 <div className="card-body">
                   <div className="card-title">{element.title}</div>

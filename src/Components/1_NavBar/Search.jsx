@@ -7,6 +7,7 @@ const Search = () => {
   const [keyword,setKeyword]= useState();
 
   const nav = useNavigate();
+  
   const SearchHandler = (event)=>{
 
     console.log(event)

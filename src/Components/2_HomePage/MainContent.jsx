@@ -2,11 +2,13 @@ import React from 'react'
 import { useState,useEffect } from 'react'
 import StarIcon from '../../assets/newStar.png'
 import {  useSearchParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const MainContent = () => {
 
   const [products, setProducts] = useState([]);
   const [searchParams]= useSearchParams();
+  const nav = useNavigate()
 
   useEffect(()=>{
 
@@ -60,11 +62,11 @@ const MainContent = () => {
 
       <ul className='d-flex flex-wrap '>
       {products.map((element , index)=>{ return (
-        <li key={index} style={{listStyleType:"none" }}>
+        <li key={index} style={{listStyleType:"none" , cursor:"pointer" }}  onClick={()=>{nav(`/product/${element.id}`)}} >
           
-          <div className="card m-3 E_Card" >
+          <div className="card m-3 E_Card"  >
             <img  src={element.image} alt="" style={{width:"170px", height:"200px"}} className='card-img-top pt-3' />
-            <div className="card-body">
+            <div className="card-body" >
               <div className="card-title">{element.title}</div>
 {/*               <div className='card-subtitle'>{element.discription}</div>*/}               
 
@@ -72,7 +74,7 @@ const MainContent = () => {
                     <span> ({element.review})</span>
                     <div className="card-text" style={{wordSpacing:"10px"}}>₹{element.price } <span></span><span className='text-decoration-line-through text-secondary'> ₹{element.MRP}</span>
                     <span style={{color:"hsl(120, 77%, 35%)"}}> {element.offer}%Off </span>
-
+                    
                     </div>
             </div>
 

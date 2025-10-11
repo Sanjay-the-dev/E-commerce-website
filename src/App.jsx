@@ -8,6 +8,7 @@ import Electronics from './Components/Electronics/Electronics.jsx'
 import TVappliances from './Components/TV_appliances/Tv_appliances.jsx'
 import Furnitures from './Components/Furniture/Furniture.jsx'
 import Sports from './Components/Sports/Sports.jsx'
+import ProductDetails from './Components/ProductDetails/ProductDetails.jsx'
 
 const App = () => {
 
@@ -18,6 +19,7 @@ const App = () => {
 
       <Routes>
           <Route path='/search' element={<HomePage/>}></Route>
+          <Route path='/product/:id' element={<ProductDetails/>}></Route>
           <Route path='/home' element={<HomePage/>}></Route>
           <Route path='/electronics' element={<Electronics/>}></Route>
           <Route path='/tv_appliances' element={<TVappliances/>}></Route>
