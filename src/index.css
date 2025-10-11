@@ -1,0 +1,47 @@
+#navbar-button,#navbar-button:focus,#navbar-button:active{
+   
+    border: 0px;
+    outline: none;
+    box-shadow: none;
+}
+ 
+.E_Card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    transition: all 0.3s;
+}
+.E_Card:hover{
+
+    box-shadow: 2px 2px 3px 1px rgba(132, 132, 132, 0.644);
+    transform: scale(102%);
+}
+
+.E-form{
+    width: 35vw;
+}
+
+
+@media (max-width:990px) {
+    
+    .E-border-nav-items{
+        border-bottom: 1px solid gray;
+    }
+
+}
+@media (max-width:568px) {
+    
+
+    .E-form{
+    width: 90vw;
+}
+}
+@media (min-width:990px) {
+    
+   /*   #navItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}  */
+}
