@@ -1,0 +1,75 @@
+.E-buynow-btn,.E-buynow-btn-2{
+
+    font-size: 1.5rem;
+}
+
+.E-buynow-btn:focus,.E-buynow-btn:active{
+
+    background-color: hsl(152, 69%, 31%);
+}
+ .E-buynow-btn-2:active,.E-buynow-btn-2:focus{
+
+    background-color: hsl(216, 98%, 52%) ;
+}
+
+.E-Image{
+     width: 400px ;
+     height: auto;
+     object-fit: cover;
+     transition: all .3s;
+}
+
+.E-LargeScreen{
+    display: block;
+
+}
+
+.E-MobileView{
+    display: none;
+}
+
+@media (max-width:1200px) {
+    
+    .E-buynow-btn-2,.E-buynow-btn{
+    font-size: 1rem;
+    }
+
+    .E-Image{
+     width: 300px ;
+     height: auto;
+     object-fit: cover;
+}
+}
+@media (max-width:990px) {
+    
+    .E-buynow-btn-2,.E-buynow-btn{
+    font-size: 1rem;
+    }
+
+    .E-Image{
+     width: 250px ;
+     height: auto;
+     object-fit: cover;
+}
+
+}
+@media (max-width:768px) {
+
+    .E-Image{
+     width: 200px ;
+     height: auto;
+     object-fit: cover;
+    }
+.E-LargeScreen{
+    display: none;
+
+}
+
+.E-MobileView{
+    display: block;
+}
+
+
+
+
+}

@@ -47,7 +47,7 @@ const Sports = () => {
         <div className=' mt-5 mx-auto ' style={{width:"80vw"}}>
     
           <h2 className='h2'>Sports</h2>
-          <ul className='d-flex flex-wrap '>
+          <ul className='d-flex flex-wrap ' id='E-main-ul'>
           {filterProducts.map((element , index)=>{ return (
             <li key={index} style={{listStyleType:"none" ,  cursor:"pointer"}} onClick={()=>{nav(`/product/${element.id}`)}}>
               

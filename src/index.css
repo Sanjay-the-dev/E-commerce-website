@@ -23,6 +23,7 @@
 }
 
 
+
 @media (max-width:990px) {
     
     .E-border-nav-items{
@@ -33,6 +34,9 @@
 @media (max-width:568px) {
     
 
+    #E-main-ul{
+        padding-left: 0%;
+    }
     .E-form{
     width: 90vw;
 }

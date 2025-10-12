@@ -60,7 +60,7 @@ const MainContent = () => {
   
 
 
-      <ul className='d-flex flex-wrap '>
+      <ul className='d-flex flex-wrap '  id='E-main-ul'>
       {products.map((element , index)=>{ return (
         <li key={index} style={{listStyleType:"none" , cursor:"pointer" }}  onClick={()=>{nav(`/product/${element.id}`)}} >
           
