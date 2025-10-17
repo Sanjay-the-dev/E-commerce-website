@@ -1,6 +1,6 @@
 import React from 'react'
 import { Fragment } from 'react';
-import './cart.css';
+import './Cart.css';
 import deleteIcon from './DeleteIcon.png'
 import { useState} from 'react';
 import { ToastContainer, Toast } from 'react-bootstrap';
