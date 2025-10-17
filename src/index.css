@@ -22,12 +22,47 @@
     width: 35vw;
 }
 
+#E-Search-Cart-Btn:active, #E-Search-Cart-Btn:focus{
+    box-shadow: transparent;
+    outline: transparent;
+    border: transparent;
+
+}
+#E-Search-Login-Btn:active, #E-Search-Login-Btn:focus{
+    box-shadow: transparent;
+    outline: transparent;
+    border: transparent;
+    padding: 6px 12px;
+    background-color: hsl(216, 98%, 52%);
+
+}
 
 
-@media (max-width:990px) {
+
+@media (max-width:1199px) {
     
     .E-border-nav-items{
         border-bottom: 1px solid gray;
+    }
+
+    #E-Search-Cart-Btn:active, #E-Search-Cart-Btn:focus{
+    box-shadow: none;
+    outline: transparent;
+    border: transparent;
+
+    }
+    #E-Search-Cart-Btn:active, #E-Search-Cart-Btn:focus,#E-Search-Cart-Btn:hover{
+    box-shadow: none;
+    outline: transparent;
+    border: transparent;
+    background-color: hsl(216, 98%, 52%);
+
+    }
+        #E-Search-Search-Btn:active, #E-Search-Search-Btn:focus,#E-Search-Search-Btn:hover{
+    box-shadow: none;
+ 
+
+    background-color: aliceblue;
     }
 
 }
@@ -39,6 +74,19 @@
     }
     .E-form{
     width: 90vw;
+
+    #E-Search-Cart-Btn:active, #E-Search-Cart-Btn:focus{
+    box-shadow: none;
+    outline: transparent;
+    border: transparent;
+
+    }
+    #E-Search-Search-Btn:active, #E-Search-Search-Btn:focus,#E-Search-Search-Btn:hover{
+    box-shadow: none;
+ 
+
+    background-color: aliceblue;
+    }
 }
 }
 @media (min-width:990px) {
