@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Search from './Search';
+
 import Logo from '../../assets/NavBar-assets/Brand_icon.png'
 import CartIcon from '../../assets/NavBar-assets/shopping-cart.png'
 
