@@ -30,10 +30,12 @@ const App = () => {
 
       <NavBar/>
 
+
       <Routes>
 
           <Route path='/search' element={<HomePage/>}></Route>
           <Route path='/product/:id' element={<ProductDetails cart= {cart} setCart={setCart} />}></Route>
+          <Route path='/' element={<HomePage/>}></Route>
           <Route path='/home' element={<HomePage/>}></Route>
           <Route path='/electronics' element={<Electronics/>}></Route>
           <Route path='/tv_appliances' element={<TVappliances/>}></Route>
